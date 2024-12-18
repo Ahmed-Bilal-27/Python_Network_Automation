@@ -1,0 +1,34 @@
+R1#sh tcp
+
+tty226, virtual tty from host 192.168.134.130
+Connection state is ESTAB, I/O status: 1, unread input bytes: 0
+Connection is ECN Disabled, Mininum incoming TTL 0, Outgoing TTL 255
+Local host: 10.0.0.1, Local port: 22
+Foreign host: 192.168.134.130, Foreign port: 34254
+
+Enqueued packets for retransmit: 20, input: 0  mis-ordered: 0 (0 bytes)
+
+Event Timers (current time is 0x1C6834):
+Timer          Starts    Wakeups            Next
+Retrans            77          0        0x1C6848
+TimeWait            0          0             0x0
+AckHold            13          3             0x0
+SendWnd             0          0             0x0
+KeepAlive           0          0             0x0
+GiveUp              0          0             0x0
+PmtuAger            0          0             0x0
+DeadWait            0          0             0x0
+
+iss: 1770030287  snduna: 1770038391  sndnxt: 1770039431     sndwnd:  63941
+irs: 2953867655  rcvnxt: 2953870048  rcvwnd:       4128  delrcvwnd:      0
+
+SRTT: 314 ms, RTTO: 370 ms, RTV: 56 ms, KRTT: 0 ms
+minRTT: 44 ms, maxRTT: 348 ms, ACK hold: 200 ms
+Flags: passive open, active open, retransmission timeout
+IP Precedence value : 6
+
+TCB is waiting for TCP Process (187)
+
+Datagrams (max data segment is 536 bytes):
+Rcvd: 127 (out of order: 0), with data: 15, total data bytes: 2528
+Sent: 229 (retransmit: 0, fastretransmit: 0, partialack: 0, Second Congestion: 0), with data: 221, total data bytes: 12791

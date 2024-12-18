@@ -1,0 +1,9 @@
+3.11.6/Telnet$ python3 05_3.6_paramiko_ssh.py
+
+R2>enable
+Password: 
+R2#show ip int br
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.134.100 YES manual up                    up      
+FastEthernet0/1            unassigned      YES unset  administratively down down    
+R2#

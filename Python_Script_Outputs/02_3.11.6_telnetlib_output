@@ -1,0 +1,16 @@
+""" Not part of the output. Following is the output of a script ran on December 16th, 2024"""
+
+Enter the Command to execute : sh ip int br
+ R1 for running Python Network Automation scripts only 
+
+User Access Verification
+
+Username: Ahmed_Bilal
+Password: 
+R1>enable
+Password: 
+R1#sh ip int br
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.134.100 YES manual up                    up      
+FastEthernet0/1            unassigned      YES unset  administratively down down    
+R1#exit

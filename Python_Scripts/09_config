@@ -1,0 +1,3 @@
+sh ip int br
+sho cdp ne de
+sh tcp

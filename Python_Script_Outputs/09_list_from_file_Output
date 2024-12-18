@@ -1,0 +1,111 @@
+(Python_Network_Automation) ubuntu-23-10-1@ubuntu-23-10-1-None:~/Desktop/Python_3.11.6/Telnet$ python3 09_list_from_file.py 
+
+ #### Connecting to the device 192.168.134.100####
+
+
+R2>sh ip int br
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.134.100 YES NVRAM  up                    up      
+FastEthernet0/1            10.0.0.2        YES manual up                    up      
+Loopback2                  1.1.1.2         YES manual up                    up      
+Loopback3                  1.1.1.3         YES manual up                    up      
+Loopback4                  1.1.1.4         YES manual up                    up      
+R2>sho cdp ne de
+-------------------------
+Device ID: R1.Ahmed_Bilal.com
+Entry address(es): 
+  IP address: 10.0.0.1
+Platform: Cisco 3660,  Capabilities: Router Switch IGMP 
+Interface: FastEthernet0/1,  Port ID (outgoing port): FastEthernet0/0
+Holdtime : 126 sec
+
+Version :
+Cisco IOS Software, 3600 Software (C3660-A3JK9S-M), Version 12.4(19), RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Fri 29-Feb-08 23:47 by prod_rel_team
+
+advertisement version: 2
+VTP Management Domain: ''
+Duplex: full
+
+R2>sh tcp
+
+tty98, virtual tty from host 192.168.134.130
+Connection state is ESTAB, I/O status: 1, unread input bytes: 0            
+Connection is ECN Disabled, Mininum incoming TTL 0, Outgoing TTL 255
+Local host: 192.168.134.100, Local port: 22
+Foreign host: 192.168.134.130, Foreign port: 42326
+
+Enqueued packets for retransmit: 5, input: 0  mis-ordered: 0 (0 bytes)
+
+Event Timers (current time is 0x29C6CC):
+Timer          Starts    Wakeups            Next
+Retrans            37          0        0x29C7E3
+TimeWait            0          0             0x0
+AckHold            12          2             0x0
+SendWnd             0          0             0x0
+KeepAlive           0          0             0x0
+GiveUp              0          0             0x0
+PmtuAger            0          0             0x0
+DeadWait            0          0             0x0
+
+iss: 2933171253  snduna: 2933175237  sndnxt: 2933175497     sndwnd:  63941
+irs: 1329853451  rcvnxt: 1329855436  rcvwnd:       3616  delrcvwnd:    512
+
+ --More-- 
+
+ #### Connecting to the device 10.0.0.1####
+
+
+R1>sh ip int br
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            10.0.0.1        YES manual up                    up      
+FastEthernet0/1            unassigned      YES unset  administratively down down    
+Loopback2                  1.1.1.2         YES manual up                    up      
+Loopback3                  1.1.1.3         YES manual up                    up      
+Loopback4                  1.1.1.4         YES manual up                    up      
+R1>sho cdp ne de
+-------------------------
+Device ID: R2.Ahmed_Bilal.com
+Entry address(es): 
+  IP address: 10.0.0.2
+Platform: Cisco 3725,  Capabilities: Router Switch IGMP 
+Interface: FastEthernet0/0,  Port ID (outgoing port): FastEthernet0/1
+Holdtime : 153 sec
+
+Version :
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(25d), RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2010 by Cisco Systems, Inc.
+Compiled Wed 18-Aug-10 07:55 by prod_rel_team
+
+advertisement version: 2
+VTP Management Domain: ''
+Duplex: half
+
+R1>sh tcp
+
+tty226, virtual tty from host 192.168.134.130
+Connection state is ESTAB, I/O status: 1, unread input bytes: 0            
+Connection is ECN Disabled, Mininum incoming TTL 0, Outgoing TTL 255
+Local host: 10.0.0.1, Local port: 22
+Foreign host: 192.168.134.130, Foreign port: 42832
+
+Enqueued packets for retransmit: 7, input: 0  mis-ordered: 0 (0 bytes)
+
+Event Timers (current time is 0x2B6040):
+Timer          Starts    Wakeups            Next
+Retrans            28          1        0x2B64C6
+TimeWait            0          0             0x0
+AckHold            14          3             0x0
+SendWnd             0          0             0x0
+KeepAlive           0          0             0x0
+GiveUp              0          0             0x0
+PmtuAger            0          0             0x0
+DeadWait            0          0             0x0
+
+iss: 1521204425  snduna: 1521208321  sndnxt: 1521208685     sndwnd:  63941
+irs: 3365311186  rcvnxt: 3365313171  rcvwnd:       3836  delrcvwnd:    292
+
+ --More-- 

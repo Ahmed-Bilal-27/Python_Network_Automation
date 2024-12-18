@@ -1,0 +1,22 @@
+DeprecationWarning: 'telnetlib' is deprecated and slated for removal in Python 3.13
+  import telnetlib
+Enter your Username: Ahmed_Bilal
+Enter password:
+
+Warning: QtConsole does not support password mode, the text you type will be visible.Ahmed_Bilal
+Enter the Command to execute : sh ip int br
+
+R2>Ahmed_Bilal
+Translating "Ahmed_Bilal"
+
+Translating "Ahmed_Bilal"
+% Unknown command or computer name, or unable to find computer address
+R2>Ahmed_Bilal
+% Unknown command or computer name, or unable to find computer address
+R2>enable
+Password: 
+R2#sh ip int br
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.134.100 YES manual up                    up      
+FastEthernet0/1            unassigned      YES unset  administratively down down    
+R2#exit

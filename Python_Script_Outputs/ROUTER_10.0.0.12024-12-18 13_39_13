@@ -1,0 +1,7 @@
+
+R1>terminal len 0
+R1>show run
+         ^
+% Invalid input detected at '^' marker.
+
+R1>
